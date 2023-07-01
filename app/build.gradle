@@ -7,6 +7,10 @@ android {
     namespace 'com.ph03nixc0ders.njilaka'
     compileSdk 33
 
+    viewBinding {
+        enabled = true
+    }
+
     dataBinding{
         enabled=true
     }
