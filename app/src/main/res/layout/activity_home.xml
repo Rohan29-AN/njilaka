@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.Home"
+    android:background="@color/silver"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/chip"/>
+        <TextView
+            android:letterSpacing="0.2"
+            android:textColor="@color/red"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:fontFamily="@font/raleway"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Generate"/>
+            <EditText
+                android:enabled="false"
+                android:text="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:id="@+id/numberToGenerate"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="serie(s) of"/>
+
+            <EditText
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edit"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:id="@+id/numberSeries"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="number(s)"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/border_white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="From"/>
+            <EditText
+                android:hint="0"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/border_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:id="@+id/from"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="to"/>
+
+            <EditText
+                android:hint="42"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:background="@drawable/border_edit"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:id="@+id/to"/>
+
+            <View
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+               />
+        </LinearLayout>
+        
+        
+        <Button
+            android:background="@color/red"
+            android:layout_marginTop="20dp"
+            android:id="@+id/generate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Generate"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:paddingBottom="10dp"
+        android:id="@+id/resultat_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KIKISO MORAMORA"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+            android:background="@color/white"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <TextView
+                    android:id="@+id/resultat"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:text="123456"
+                    android:textSize="15dp"/>
+
+                <com.anupkumarpanwar.scratchview.ScratchView
+                    android:visibility="visible"
+                    android:id="@+id/scratch_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:tile_mode="REPEAT"
+                    app:overlay_width="300dp"
+                    app:overlay_height="70dp"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/restart"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ic_restart"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
