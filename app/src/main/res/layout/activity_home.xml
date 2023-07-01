@@ -155,7 +155,7 @@
     </LinearLayout>
 
     <LinearLayout
-
+        android:visibility="gone"
         android:paddingBottom="10dp"
         android:id="@+id/resultat_linear"
         android:layout_width="match_parent"
@@ -194,7 +194,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
                     android:text="123456"
-                    android:textSize="30dp"/>
+                    android:textSize="15dp"/>
 
                 <com.anupkumarpanwar.scratchview.ScratchView
                     android:visibility="visible"
