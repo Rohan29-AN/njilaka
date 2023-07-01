@@ -39,7 +39,7 @@ class SplashScreen : AppCompatActivity() {
         this._binding.slogan.startAnimation(animation_slogan)
 
         //REDIRECT TO HOME ACTIVITY AFTER 5s
-        val delayMillis=5000L
+        val delayMillis=2000L
         Handler().postDelayed({
             val intent= Intent(this@SplashScreen,Home::class.java)
             startActivity(intent)
