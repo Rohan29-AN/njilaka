@@ -7,6 +7,10 @@ android {
     namespace 'com.ph03nixc0ders.njilaka'
     compileSdk 33
 
+    dataBinding{
+        enabled=true
+    }
+
     defaultConfig {
         applicationId "com.ph03nixc0ders.njilaka"
         minSdk 21
