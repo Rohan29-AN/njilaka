@@ -20,6 +20,7 @@
             android:layout_height="150dp"
             android:src="@drawable/chip"/>
         <TextView
+            android:fontFamily="@font/ralewayitalic"
             android:id="@+id/slogan"
             android:textStyle="italic"
             android:textSize="20dp"
